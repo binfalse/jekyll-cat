@@ -17,7 +17,7 @@ This, for example, goes well for code-highlighting of complete source code files
 You can just include your source file like this:
 
     {% highlight php %}
-    {% cat file/to/include.ext %}
+    {% cat assets/scripts/tool.php %}
     {% endhighlight %}
 
 
