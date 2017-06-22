@@ -1,9 +1,28 @@
-# cat plugin for jekyll
+# CAT for Jekyll
 
 This is a plugin for [jekyll](http://jekyllrb.com/) that just behaves like the [`cat` tool](https://en.wikipedia.org/wiki/Cat_%28Unix%29) that you know from Unix- and Linux-based systems.
 
 It will output a specified file into the position from where it was called from.
 Quite similar to the `include` command, but it is able to include files from directories other than `_include`.
+
+
+## Installation
+
+Basically, all you need to do is putting the [file `_plugins/cat.rb`](_plugins/cat.rb) into the `_plugins` directory of your jekyll site.
+For example, using wget from the root of your Jekyll website:
+
+    wget -O _plugins/cat.rb https://raw.githubusercontent.com/binfalse/jekyll-cat/master/_plugins/cat.rb
+
+### As a Git submodule
+
+You can of course also add this repository as a submodule to you're website if you're using git anyways:
+
+    git submodule add https://github.com/binfalse/jekyll-cat _plugins/cat
+
+This way it's easy to stay up-to-date with changes and bug fixes.
+However, don't forget to initialise the submodules when changing machines etc:
+
+    git submodule update --init --recursive
 
 ## Usage
 
