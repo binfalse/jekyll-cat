@@ -6,6 +6,22 @@ It will output a specified file into the position from where it was called from.
 Quite similar to the `include` command, but it is able to include files from directories other than `_include`.
 
 
+## Usage
+
+You just need to specify the file to "cat" into the document:
+
+    {% cat file/to/include.ext %}
+
+This will include the contents of the file `file/to/include.ext`.
+The path to the file should start relatively from Jekyll's main directory.
+This, for example, goes well for code-highlighting of complete source code files.
+You can just include your source file like this:
+
+    {% highlight php %}
+    {% cat assets/scripts/tool.php %}
+    {% endhighlight %}
+
+
 ## Installation
 
 Basically, all you need to do is putting the [file `_plugins/cat.rb`](_plugins/cat.rb) into the `_plugins` directory of your jekyll site.
@@ -23,22 +39,6 @@ This way it's easy to stay up-to-date with changes and bug fixes.
 However, don't forget to initialise the submodules when changing machines etc:
 
     git submodule update --init --recursive
-
-## Usage
-
-You just need to specify the file to "cat" into the document:
-
-    {% cat file/to/include.ext %}
-
-This will include the contents of the file `file/to/include.ext`.
-The path to the file should start relatively from Jekyll's main directory.
-This, for example, goes well for code-highlighting of complete source code files.
-You can just include your source file like this:
-
-    {% highlight php %}
-    {% cat assets/scripts/tool.php %}
-    {% endhighlight %}
-
 
 ## LICENSE
 
