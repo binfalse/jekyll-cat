@@ -1,9 +1,9 @@
 # CAT for Jekyll
 
-This is a plugin for [jekyll](http://jekyllrb.com/) that just behaves like the [`cat` tool](https://en.wikipedia.org/wiki/Cat_%28Unix%29) that you know from Unix- and Linux-based systems.
+This is a plugin for [jekyll](http://jekyllrb.com/) that just behaves like the [`cat` tool](https://en.wikipedia.org/wiki/Cat_%28Unix%29), as know from Unix- and Linux-based systems.
 
-It will output a specified file into the position from where it was called from.
-Quite similar to the `include` command, but it is able to include files from directories other than `_include`.
+It will output a specified file into the position from where it was called.
+Quite similar to the `include` command, but CAT is able to include files from directories other than `_include`.
 
 
 ## Usage
@@ -13,7 +13,7 @@ You just need to specify the file to "cat" into the document:
     {% cat file/to/include.ext %}
 
 This will include the contents of the file `file/to/include.ext`.
-The path to the file should start relatively from Jekyll's main directory.
+The path to the file should start relative to Jekyll's main directory.
 This, for example, goes well for code-highlighting of complete source code files.
 You can just include your source file like this:
 
@@ -42,7 +42,7 @@ However, don't forget to initialise the submodules when changing machines etc:
 
 ## LICENSE
 
-This stuff is licenced under the [Beerware license](https://en.wikipedia.org/wiki/Beerware).
+This extension is licenced under the [Beerware license](https://en.wikipedia.org/wiki/Beerware).
 Do whatever you want and have a beer with me if you like :)
 
     "THE BEER-WARE LICENSE" (Revision 42):
